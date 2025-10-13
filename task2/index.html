@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <link rel="short icon" href="https://cdn.shopify.com/s/files/1/1061/1924/files/Hugging_Face_Emoji_2028ce8b-c213-4d45-94aa-21e1a0842b4d_large.png?15202324258887420558" type="image">
+    <style>
+        .newWindow{
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);  
+            display: none; 
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            position: fixed;
+
+        }
+        .modal {
+            background-color: rgb(214, 241, 241);
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            width: 300px;
+            margin-top: 50px;
+            margin-left: 30px;
+    }
+
+    </style>
+</head>
+<body>
+    <button id="btnOpen" style="margin-left: 20px;">Open modal</button>
+    <div id="newWindow" class="newWindow">
+        <div class="modal">
+            <p>Hello from Modal Window!</p>
+            <button id="btnClose" style="width: 250px">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
