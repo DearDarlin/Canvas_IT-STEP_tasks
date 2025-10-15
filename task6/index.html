@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+    <link rel="short icon" href="https://cdn.shopify.com/s/files/1/1061/1924/files/Hugging_Face_Emoji_2028ce8b-c213-4d45-94aa-21e1a0842b4d_large.png?15202324258887420558" type="image">
+    <style>
+    body {
+      background-color: #fceee2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+
+    button {
+      position: relative;
+      padding: 5px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      border: 2px solid gray;
+    }
+
+    .tooltip {
+      position: absolute;
+      background: #8e5ab5;
+      color: white;
+      padding: 10px 12px;
+      font-size: 14px;
+      display: none;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    .tooltip::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+    }
+
+    .tooltip.top::after {
+      top: 100%;
+      border-top-color: #8e5ab5;
+    }
+
+    .tooltip.bottom::after {
+      bottom: 100%;
+      border-bottom-color: #8e5ab5;
+    }
+  </style>
+</head>
+<body>
+    <button id="btn1" style="margin-top: 80px">Button 1</button>
+    <button id="btn2">Button 2</button>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
